@@ -13,8 +13,8 @@ namespace PokeWorld.Statistics
             id: 3,
             name: "105万タイプ",
             formula: lv => new Experience(
-                Floor(6 * (lv.Value ^ 3) / 5.0)
-                - 15 * (lv.Value ^ 2)
+                Floor(6 * Pow(lv.Value, 3) / 5.0)
+                - 15 * Pow(lv.Value , 2)
                 + 100 * lv.Value
                 - 140
             ));
@@ -25,6 +25,14 @@ namespace PokeWorld.Statistics
         /// <param name="d">倍精度浮動小数点数。</param>
         /// <returns><paramref name="d"/> 以下の最大の整数値。</returns>
         private static int Floor(double d) => Convert.ToInt32(Math.Floor(d));
+
+        /// <summary>
+        /// 指定の数値を指定した値で累乗した整数値を返します。
+        /// </summary>
+        /// <param name="x">累乗対象の整数値。</param>
+        /// <param name="y">累乗を指定する整数値。</param>
+        /// <returns>数値 <paramref name="x"/> を <paramref name="y"/> で累乗した値。</returns>
+        private static int Pow(int x, int y) => Convert.ToInt32(Math.Pow(x, y));
 
         #region 列挙型クラスのインスタンス メンバ
 
