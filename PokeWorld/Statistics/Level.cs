@@ -13,26 +13,48 @@ namespace PokeWorld.Statistics
         private const int MaxValue = 100;
 
         /// <summary>
-        /// レベルの値を取得します。
+        /// レベルを取得します。
         /// </summary>
         public int Value { get; private set; }
 
         /// <summary>
+        /// 最小レベルであることを表す値を取得します。
+        /// </summary>
+        public bool IsMin => Value == MinValue;
+
+        /// <summary>
+        /// 最大レベルであることを表す値を取得します。
+        /// </summary>
+        public bool IsMax => Value == MaxValue;
+
+        /// <summary>
         /// <see cref="Level"/> の新しいインスタンスを生成します。
         /// </summary>
-        /// <param name="value">レベルの値。</param>
+        /// <param name="value">レベル。</param>
         public Level(int value)
         {
             if (value < MinValue || value > MaxValue)
             {
                 throw new ArgumentOutOfRangeException(nameof(value), value,
-                    $"レベルの値の範囲は {MinValue} ～ {MaxValue} です。");
+                    $"レベルの範囲は {MinValue} ～ {MaxValue} です。");
             }
             Value = value;
         }
 
         /// <summary>
-        /// レベルの値をそれと等価な文字列の値に変換します。
+        /// 次のレベルを取得します。
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException">最大レベルの場合に呼び出すとスローされます。</exception>
+        public Level GetNext()
+        {
+            if (IsMax) { throw new InvalidOperationException("最大レベルです。"); }
+
+            return new Level(Value + 1);
+        }
+
+        /// <summary>
+        /// レベルをそれと等価な文字列の値に変換します。
         /// </summary>
         /// <returns></returns>
         public override string ToString() => Value.ToString();
