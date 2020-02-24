@@ -5,11 +5,11 @@ using System.Text;
 namespace PokeWorld.Statistics
 {
     /// <summary>
-    /// ステータスを表します。
+    /// ポケモンを表します。
     /// </summary>
-    public class Statistic
+    public class Pokemon
     {
-        /// <summary>種族情報</summary>
+        /// <summary>種族</summary>
         private readonly Species species;
         /// <summary>レベル & 経験値操作オブジェクト</summary>
         private readonly LevelExperienceControler levelControler;
@@ -30,11 +30,11 @@ namespace PokeWorld.Statistics
         public Experience RequiredExpToNextLevel => levelControler.RequiredExpToNextLevel;
 
         /// <summary>
-        /// <see cref="Statistic"/> の新しいインスタンスを生成します。
+        /// <see cref="Pokemon"/> の新しいインスタンスを生成します。
         /// </summary>
         /// <param name="species">種族。</param>
         /// <param name="level">レベル。</param>
-        public Statistic(Species species, Level level)
+        public Pokemon(Species species, Level level)
         {
             this.species = species;
             levelControler = new LevelExperienceControler(species.ExpType, level);
