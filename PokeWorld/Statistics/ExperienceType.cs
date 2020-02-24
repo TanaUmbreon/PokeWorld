@@ -6,7 +6,7 @@ namespace PokeWorld.Statistics
     /// <summary>
     /// 経験値タイプを表します。
     /// </summary>
-    public class ExperienceType : Enumeration
+    public sealed class ExperienceType : Enumeration
     {
         /// <summary>105万タイプ</summary>
         public static readonly ExperienceType MediumSlow = new ExperienceType(

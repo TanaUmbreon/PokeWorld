@@ -5,7 +5,7 @@ namespace PokeWorld.Statistics
     /// <summary>
     /// せいかく補正を表します。
     /// </summary>
-    public class CorrectionRate : Enumeration
+    public sealed class CorrectionRate : Enumeration
     {
         /// <summary>無補正 (1.0 倍)</summary>
         public static readonly CorrectionRate NoChange = new CorrectionRate(

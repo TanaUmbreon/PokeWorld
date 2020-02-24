@@ -5,7 +5,7 @@ namespace PokeWorld.Statistics
     /// <summary>
     /// ポケモンの種族を表します。
     /// </summary>
-    public class Species : Enumeration
+    public sealed class Species : Enumeration
     {
         /// <summary>フシギダネ</summary>
         public static readonly Species Bulbasaur = new Species(

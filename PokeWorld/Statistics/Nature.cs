@@ -8,7 +8,7 @@ namespace PokeWorld.Statistics
     /// <summary>
     /// せいかくを表します。
     /// </summary>
-    public class Nature : Enumeration
+    public sealed class Nature : Enumeration
     {
         /// <summary>がんばりや</summary>
         public static readonly Nature Hardy = new Nature(
