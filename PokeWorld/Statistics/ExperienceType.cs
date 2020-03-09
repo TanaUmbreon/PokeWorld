@@ -8,16 +8,68 @@ namespace PokeWorld.Statistics
     /// </summary>
     public sealed class ExperienceType : Enumeration
     {
+        /// <summary>60万タイプ</summary>
+        public static readonly ExperienceType Erratic = new ExperienceType(
+            id: 0,
+            name: "60万タイプ",
+            formula: level => level.Value switch
+            {
+                int lv when lv <= 50 =>
+                    new Experience(Floor(Pow(lv, 3) * (100 - lv) / 50.0)),
+                int lv when lv <= 68 =>
+                    new Experience(Floor(Pow(lv, 3) * (150 - lv) / 100.0)),
+                int lv when lv <= 98 =>
+                    new Experience(Floor(Pow(lv, 3) * Floor((1911 - (10 * lv)) / 3.0) / 500.0)),
+                int lv =>
+                    new Experience(Floor(Pow(lv, 3) * (160 - lv) / 100.0)),
+            });
+
+        /// <summary>80万タイプ</summary>
+        public static readonly ExperienceType Fast = new ExperienceType(
+            id: 1,
+            name: "80万タイプ",
+            formula: lv => new Experience(Floor(4 * Pow(lv.Value, 3) / 5.0))
+            );
+
+        /// <summary>100万タイプ</summary>
+        public static readonly ExperienceType MediumFast = new ExperienceType(
+            id: 2,
+            name: "100万タイプ",
+            formula: lv => new Experience(Pow(lv.Value, 3))
+            );
+
         /// <summary>105万タイプ</summary>
         public static readonly ExperienceType MediumSlow = new ExperienceType(
             id: 3,
             name: "105万タイプ",
             formula: lv => new Experience(
-                Floor(6 * Pow(lv.Value, 3) / 5.0)
-                - 15 * Pow(lv.Value , 2)
+                + Floor(6 * Pow(lv.Value, 3) / 5.0)
+                - 15 * Pow(lv.Value, 2)
                 + 100 * lv.Value
                 - 140
-            ));
+                )
+            );
+
+        /// <summary>125万タイプ</summary>
+        public static readonly ExperienceType Slow = new ExperienceType(
+            id: 4,
+            name: "125万タイプ",
+            formula: lv => new Experience(Floor(5 * Pow(lv.Value, 3) / 4.0))
+            );
+
+        /// <summary>164万タイプ</summary>
+        public static readonly ExperienceType Fluctuating = new ExperienceType(
+            id: 5,
+            name: "164万タイプ",
+            formula: level => level.Value switch
+            {
+                int lv when lv <= 15 =>
+                    new Experience(Floor(Pow(lv, 3) * (24 + Floor((lv + 1) / 3.0)) / 50.0)),
+                int lv when lv <= 36 =>
+                    new Experience(Floor(Pow(lv, 3) * (14 + lv) / 50.0)),
+                int lv =>
+                    new Experience(Floor(Pow(lv, 3) * (32 + Floor(lv / 2.0)) / 50.0)),
+            });
 
         /// <summary>
         /// 指定した数以下の数のうち、最大の整数値を返します。
@@ -46,10 +98,7 @@ namespace PokeWorld.Statistics
         /// <param name="name">経験値タイプ名。</param>
         /// <param name="formula">指定したレベルに到達する為に必要な累計経験値を算出する計算式。</param>
         private ExperienceType(int id, string name, Func<Level, Experience> formula) :
-            base(id, name)
-        {
-            this.formula = formula;
-        }
+            base(id, name) => this.formula = formula;
 
         /// <summary>
         /// 指定したレベルに到達する為に必要な累計経験値を計算します。
