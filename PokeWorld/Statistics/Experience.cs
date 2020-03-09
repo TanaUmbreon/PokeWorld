@@ -54,5 +54,14 @@ namespace PokeWorld.Statistics
         /// </summary>
         /// <returns></returns>
         public override string ToString() => Value.ToString();
+
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Experience otherValue)) { return false; }
+
+            return GetType().Equals(obj.GetType()) && Value.Equals(otherValue.Value);
+        }
+
+        public override int GetHashCode() => Value.GetHashCode();
     }
 }
