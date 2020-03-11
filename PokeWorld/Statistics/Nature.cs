@@ -15,9 +15,9 @@ namespace PokeWorld.Statistics
             id: 0,
             name: "がんばりや",
             attack: NatureCorrection.NoChange,
-            defence: NatureCorrection.NoChange,
+            defense: NatureCorrection.NoChange,
             spAttack: NatureCorrection.NoChange,
-            spDefence: NatureCorrection.NoChange,
+            spDefense: NatureCorrection.NoChange,
             speed: NatureCorrection.NoChange
             );
 
@@ -31,7 +31,7 @@ namespace PokeWorld.Statistics
         /// <summary>
         /// ぼうぎょのせいかく補正を取得します。
         /// </summary>
-        public NatureCorrection Defence { get; private set; }
+        public NatureCorrection Defense { get; private set; }
 
         /// <summary>
         /// とくこうのせいかく補正を取得します。
@@ -41,7 +41,7 @@ namespace PokeWorld.Statistics
         /// <summary>
         /// とくぼうのせいかく補正を取得します。
         /// </summary>
-        public NatureCorrection SpDefence { get; private set; }
+        public NatureCorrection SpDefense { get; private set; }
 
         /// <summary>
         /// すばやさのせいかく補正を取得します。
@@ -54,17 +54,17 @@ namespace PokeWorld.Statistics
         /// <param name="id">せいかくを一意に特定する為の識別子。</param>
         /// <param name="name">せいかく名。</param>
         /// <param name="attack">こうげきのせいかく補正。</param>
-        /// <param name="defence">ぼうぎょのせいかく補正。</param>
+        /// <param name="defense">ぼうぎょのせいかく補正。</param>
         /// <param name="spAttack">とくこうのせいかく補正。</param>
-        /// <param name="spDefence">とくぼうのせいかく補正。</param>
+        /// <param name="spDefense">とくぼうのせいかく補正。</param>
         /// <param name="speed">すばやさのせいかく補正。</param>
-        private Nature(int id, string name, NatureCorrection attack, NatureCorrection defence, NatureCorrection spAttack, NatureCorrection spDefence, NatureCorrection speed) :
+        private Nature(int id, string name, NatureCorrection attack, NatureCorrection defense, NatureCorrection spAttack, NatureCorrection spDefense, NatureCorrection speed) :
             base(id, name)
         {
             Attack = attack;
-            Defence = defence;
+            Defense = defense;
             SpAttack = spAttack;
-            SpDefence = spDefence;
+            SpDefense = spDefense;
             Speed = speed;
         }
 

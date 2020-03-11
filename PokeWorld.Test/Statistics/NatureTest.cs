@@ -14,9 +14,9 @@ namespace PokeWorld.Test.Statistics
                 Assert.That(member.Id, Is.EqualTo(0));
                 Assert.That(member.Name, Is.EqualTo("がんばりや"));
                 Assert.That(member.Attack, Is.EqualTo(NatureCorrection.NoChange));
-                Assert.That(member.Defence, Is.EqualTo(NatureCorrection.NoChange));
+                Assert.That(member.Defense, Is.EqualTo(NatureCorrection.NoChange));
                 Assert.That(member.SpAttack, Is.EqualTo(NatureCorrection.NoChange));
-                Assert.That(member.SpDefence, Is.EqualTo(NatureCorrection.NoChange));
+                Assert.That(member.SpDefense, Is.EqualTo(NatureCorrection.NoChange));
                 Assert.That(member.Speed, Is.EqualTo(NatureCorrection.NoChange));
             }
         }
