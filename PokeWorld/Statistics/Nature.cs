@@ -14,11 +14,11 @@ namespace PokeWorld.Statistics
         public static readonly Nature Hardy = new Nature(
             id: 0,
             name: "がんばりや",
-            attack: CorrectionRate.NoChange,
-            defence: CorrectionRate.NoChange,
-            spAttack: CorrectionRate.NoChange,
-            spDefence: CorrectionRate.NoChange,
-            speed: CorrectionRate.NoChange
+            attack: NatureCorrection.NoChange,
+            defence: NatureCorrection.NoChange,
+            spAttack: NatureCorrection.NoChange,
+            spDefence: NatureCorrection.NoChange,
+            speed: NatureCorrection.NoChange
             );
 
         #region 列挙型クラスのインスタンス メンバ
@@ -26,27 +26,27 @@ namespace PokeWorld.Statistics
         /// <summary>
         /// こうげきのせいかく補正を取得します。
         /// </summary>
-        public CorrectionRate Attack { get; private set; }
+        public NatureCorrection Attack { get; private set; }
 
         /// <summary>
         /// ぼうぎょのせいかく補正を取得します。
         /// </summary>
-        public CorrectionRate Defence { get; private set; }
+        public NatureCorrection Defence { get; private set; }
 
         /// <summary>
         /// とくこうのせいかく補正を取得します。
         /// </summary>
-        public CorrectionRate SpAttack { get; private set; }
+        public NatureCorrection SpAttack { get; private set; }
 
         /// <summary>
         /// とくぼうのせいかく補正を取得します。
         /// </summary>
-        public CorrectionRate SpDefence { get; private set; }
+        public NatureCorrection SpDefence { get; private set; }
 
         /// <summary>
         /// すばやさのせいかく補正を取得します。
         /// </summary>
-        public CorrectionRate Speed { get; private set; }
+        public NatureCorrection Speed { get; private set; }
 
         /// <summary>
         /// <see cref="Nature"/> の新しいインスタンスを生成します。
@@ -58,7 +58,7 @@ namespace PokeWorld.Statistics
         /// <param name="spAttack">とくこうのせいかく補正。</param>
         /// <param name="spDefence">とくぼうのせいかく補正。</param>
         /// <param name="speed">すばやさのせいかく補正。</param>
-        private Nature(int id, string name, CorrectionRate attack, CorrectionRate defence, CorrectionRate spAttack, CorrectionRate spDefence, CorrectionRate speed) :
+        private Nature(int id, string name, NatureCorrection attack, NatureCorrection defence, NatureCorrection spAttack, NatureCorrection spDefence, NatureCorrection speed) :
             base(id, name)
         {
             Attack = attack;

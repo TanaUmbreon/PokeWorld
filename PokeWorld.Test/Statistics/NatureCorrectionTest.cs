@@ -4,24 +4,24 @@ using PokeWorld.Statistics;
 namespace PokeWorld.Test.Statistics
 {
     [TestFixture]
-    public class CorrectionRateTest
+    public class NatureCorrectionTest
     {
         [Test]
         public void TestEnumerationMember()
         {
             // Nameプロパティは表示に使用しないのでテストしない
             {
-                CorrectionRate member = CorrectionRate.NoChange;
+                NatureCorrection member = NatureCorrection.NoChange;
                 Assert.That(member.Id, Is.EqualTo(0));
                 Assert.That(member.Rate, Is.EqualTo(1.0));
             }
             {
-                CorrectionRate member = CorrectionRate.Increased;
+                NatureCorrection member = NatureCorrection.Increased;
                 Assert.That(member.Id, Is.EqualTo(1));
                 Assert.That(member.Rate, Is.EqualTo(1.1));
             }
             {
-                CorrectionRate member = CorrectionRate.Decreased;
+                NatureCorrection member = NatureCorrection.Decreased;
                 Assert.That(member.Id, Is.EqualTo(2));
                 Assert.That(member.Rate, Is.EqualTo(0.9));
             }
