@@ -20,6 +20,9 @@ namespace PokeWorld.Test.Statistics.Generators
         {
             var gen = new FixedNatureGenerator(Nature.Hardy);
             Assert.That(gen.Generate(), Is.EqualTo(Nature.Hardy));
+
+            var gen2 = new FixedNatureGenerator(Nature.Quirky);
+            Assert.That(gen2.Generate(), Is.EqualTo(Nature.Quirky));
         }
     }
 }
