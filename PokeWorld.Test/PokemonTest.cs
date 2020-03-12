@@ -5,7 +5,7 @@ using NUnit.Framework;
 using PokeWorld.Individualities;
 using PokeWorld.Individualities.Generators;
 
-namespace PokeWorld.Test.Individualities
+namespace PokeWorld.Test
 {
     [TestFixture]
     public class PokemonTest

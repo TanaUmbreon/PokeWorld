@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PokeWorld.Individualities;
 
-namespace PokeWorld.Individualities
+namespace PokeWorld
 {
     /// <summary>
     /// ポケモンを表します。
