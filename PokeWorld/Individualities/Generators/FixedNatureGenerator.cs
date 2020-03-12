@@ -1,4 +1,4 @@
-﻿namespace PokeWorld.Statistics.Generators
+﻿namespace PokeWorld.Individualities.Generators
 {
     /// <summary>
     /// 任意に固定されたせいかくを生成するアルゴリズムです。

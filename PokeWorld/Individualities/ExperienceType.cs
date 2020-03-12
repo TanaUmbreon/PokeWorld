@@ -1,7 +1,7 @@
 ﻿using System;
 using PokeWorld.DomainSupport;
 
-namespace PokeWorld.Statistics
+namespace PokeWorld.Individualities
 {
     /// <summary>
     /// 経験値タイプを表します。

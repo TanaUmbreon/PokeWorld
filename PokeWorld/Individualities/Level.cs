@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokeWorld.Statistics
+namespace PokeWorld.Individualities
 {
     /// <summary>
     /// レベルを表します。

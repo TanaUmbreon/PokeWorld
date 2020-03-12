@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PokeWorld.Statistics
+namespace PokeWorld.Individualities
 {
     /// <summary>
     /// ポケモンを表します。

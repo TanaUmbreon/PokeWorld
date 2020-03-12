@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
-using PokeWorld.Statistics;
+using PokeWorld.Individualities;
 
-namespace PokeWorld.Test.Statistics
+namespace PokeWorld.Test.Individualities
 {
     [TestFixture]
     public class NatureCorrectionTest

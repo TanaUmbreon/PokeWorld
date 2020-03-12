@@ -1,6 +1,6 @@
 ﻿using PokeWorld.DomainSupport;
 
-namespace PokeWorld.Statistics
+namespace PokeWorld.Individualities
 {
     /// <summary>
     /// ポケモンの種族を表します。

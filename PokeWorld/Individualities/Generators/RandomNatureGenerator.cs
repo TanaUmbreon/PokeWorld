@@ -2,7 +2,7 @@
 using System.Linq;
 using PokeWorld.DomainSupport;
 
-namespace PokeWorld.Statistics.Generators
+namespace PokeWorld.Individualities.Generators
 {
     /// <summary>
     /// 全せいかくから均一な確率でランダムにせいかくを生成するアルゴリズムです。

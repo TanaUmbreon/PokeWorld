@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using PokeWorld.Statistics;
-using PokeWorld.Statistics.Generators;
+using PokeWorld.Individualities;
+using PokeWorld.Individualities.Generators;
 
-namespace PokeWorld.Test.Statistics.Generators
+namespace PokeWorld.Test.Individualities.Generators
 {
     [TestFixture]
     public class FixedNatureGeneratorTest

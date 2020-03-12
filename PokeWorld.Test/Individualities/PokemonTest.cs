@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using PokeWorld.Statistics;
-using PokeWorld.Statistics.Generators;
+using PokeWorld.Individualities;
+using PokeWorld.Individualities.Generators;
 
-namespace PokeWorld.Test.Statistics
+namespace PokeWorld.Test.Individualities
 {
     [TestFixture]
     public class PokemonTest

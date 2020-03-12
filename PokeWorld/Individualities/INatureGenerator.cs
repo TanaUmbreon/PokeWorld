@@ -1,4 +1,4 @@
-﻿namespace PokeWorld.Statistics
+﻿namespace PokeWorld.Individualities
 {
     /// <summary>
     /// せいかくを生成する為のアルゴリズムです。

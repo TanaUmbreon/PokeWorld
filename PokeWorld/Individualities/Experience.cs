@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokeWorld.Statistics
+namespace PokeWorld.Individualities
 {
     /// <summary>
     /// 経験値を表します。
