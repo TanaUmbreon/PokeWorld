@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace PokeWorld.DomainSupport
+namespace PokeWorld.Common
 {
     /// <summary>
     /// 識別子と名前を持つ列挙型クラスを提供します。

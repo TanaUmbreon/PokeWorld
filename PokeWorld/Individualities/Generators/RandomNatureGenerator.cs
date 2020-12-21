@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using PokeWorld.DomainSupport;
+using PokeWorld.Common;
 
 namespace PokeWorld.Individualities.Generators
 {

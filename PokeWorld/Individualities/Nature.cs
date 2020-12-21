@@ -1,4 +1,4 @@
-﻿using PokeWorld.DomainSupport;
+﻿using PokeWorld.Common;
 
 namespace PokeWorld.Individualities
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using PokeWorld.DomainSupport;
+using PokeWorld.Common;
 
 namespace PokeWorld.Test.Helpers
 {

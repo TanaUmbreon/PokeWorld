@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PokeWorld.DomainSupport
+namespace PokeWorld.Common
 {
     /// <summary>
     /// 疑似乱数ジェネレーターを表します。
