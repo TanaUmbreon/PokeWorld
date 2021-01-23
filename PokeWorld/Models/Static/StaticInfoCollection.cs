@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace PokeWorld.Models.Static
 {
     /// <summary>
-    /// ロードした静的データを ID またはキー名で参照するための読み取り専用コレクションです。
+    /// 静的データを ID またはキー名で参照するための読み取り専用コレクションです。
     /// </summary>
     /// <typeparam name="T">静的データの型。</typeparam>
     public class StaticInfoCollection<T> : IEnumerable<T> where T : StaticInfo
