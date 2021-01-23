@@ -12,7 +12,7 @@ namespace PokeWorld.Test
         [Test]
         public void Test2()
         {
-            IStaticInfoRepository repo = new JsonStaticInfoRepository("");
+            IStaticInfoRepository repo = new JsonStaticInfoRepository("StaticInfo");
 
         }
 
