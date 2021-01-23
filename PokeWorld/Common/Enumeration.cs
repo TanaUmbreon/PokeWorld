@@ -56,9 +56,9 @@ namespace PokeWorld.Common
         /// </summary>
         /// <param name="obj">このインスタンスと比較するオブジェクト。</param>
         /// <returns>指定したオブジェクトがこのインスタンスと等しい場合は true。それ以外の場合は false。</returns>
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            if (!(obj is Enumeration otherValue)) { return false; }
+            if (obj is not Enumeration otherValue) { return false; }
 
             var typeMatches = GetType().Equals(obj.GetType());
             var valueMatches = Id.Equals(otherValue.Id);
@@ -76,9 +76,16 @@ namespace PokeWorld.Common
         /// このインスタンスの並べ替え順序での位置が、
         /// 比較対象のオブジェクトと比べて前か、後か、または同じかを示す整数を返します。
         /// </summary>
-        /// <param name="other">このインスタンスと比較するオブジェクト。</param>
+        /// <param name="obj">このインスタンスと比較するオブジェクト。</param>
         /// <returns>比較対象オブジェクトの相対順序を示す値。</returns>
-        public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
+        public int CompareTo(object? obj)
+        {
+            if (obj is not Enumeration otherValue)
+            {
+                throw new ArgumentException($"{nameof(obj)} の型がこのインスタンスの型と異なります。", nameof(obj));
+            }
+            return Id.CompareTo(otherValue.Id);
+        }
 
         public static bool operator ==(Enumeration left, Enumeration right) => left is null ? right is null : left.Equals(right);
 

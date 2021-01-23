@@ -1,12 +1,21 @@
 ﻿using NUnit.Framework;
 using PokeWorld.Individualities;
 using PokeWorld.Individualities.Generators;
+using PokeWorld.Infrastracures;
+using PokeWorld.Repositories;
 
 namespace PokeWorld.Test
 {
     [TestFixture]
     public class PokemonTest
     {
+        [Test]
+        public void Test2()
+        {
+            IStaticInfoRepository repo = new JsonStaticInfoRepository("");
+
+        }
+
         [Test]
         public void Test()
         {
