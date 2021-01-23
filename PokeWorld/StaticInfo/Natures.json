@@ -1,8 +1,8 @@
 ﻿{
   "Natures": [
     {
-      "Key": "Hardy",
       "Id": "0",
+      "Key": "Hardy",
       "Name": "がんばりや",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -11,8 +11,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Lonely",
       "Id": "1",
+      "Key": "Lonely",
       "Name": "さみしがり",
       "Attack": "NatureCorrection.Increased",
       "Defense": "NatureCorrection.Decreased",
@@ -21,8 +21,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Brave",
       "Id": "2",
+      "Key": "Brave",
       "Name": "ゆうかん",
       "Attack": "NatureCorrection.Increased",
       "Defense": "NatureCorrection.NoChange",
@@ -31,8 +31,8 @@
       "Speed": "NatureCorrection.Decreased"
     },
     {
-      "Key": "Adamant",
       "Id": "3",
+      "Key": "Adamant",
       "Name": "いじっぱり",
       "Attack": "NatureCorrection.Increased",
       "Defense": "NatureCorrection.NoChange",
@@ -41,8 +41,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Naughty",
       "Id": "4",
+      "Key": "Naughty",
       "Name": "やんちゃ",
       "Attack": "NatureCorrection.Increased",
       "Defense": "NatureCorrection.NoChange",
@@ -51,8 +51,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Bold",
       "Id": "5",
+      "Key": "Bold",
       "Name": "ずぶとい",
       "Attack": "NatureCorrection.Decreased",
       "Defense": "NatureCorrection.Increased",
@@ -61,8 +61,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Docile",
       "Id": "6",
+      "Key": "Docile",
       "Name": "すなお",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -71,8 +71,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Relaxed",
       "Id": "7",
+      "Key": "Relaxed",
       "Name": "のんき",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Increased",
@@ -81,8 +81,8 @@
       "Speed": "NatureCorrection.Decreased"
     },
     {
-      "Key": "Impish",
       "Id": "8",
+      "Key": "Impish",
       "Name": "わんぱく",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Increased",
@@ -91,8 +91,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Lax",
       "Id": "9",
+      "Key": "Lax",
       "Name": "のうてんき",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Increased",
@@ -101,8 +101,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Timid",
       "Id": "10",
+      "Key": "Timid",
       "Name": "おくびょう",
       "Attack": "NatureCorrection.Decreased",
       "Defense": "NatureCorrection.NoChange",
@@ -111,8 +111,8 @@
       "Speed": "NatureCorrection.Increased"
     },
     {
-      "Key": "Hasty",
       "Id": "11",
+      "Key": "Hasty",
       "Name": "せっかち",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Decreased",
@@ -121,8 +121,8 @@
       "Speed": "NatureCorrection.Increased"
     },
     {
-      "Key": "Serious",
       "Id": "12",
+      "Key": "Serious",
       "Name": "まじめ",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -131,8 +131,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Jolly",
       "Id": "13",
+      "Key": "Jolly",
       "Name": "ようき",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -141,8 +141,8 @@
       "Speed": "NatureCorrection.Increased"
     },
     {
-      "Key": "Naive",
       "Id": "14",
+      "Key": "Naive",
       "Name": "むじゃき",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -151,8 +151,8 @@
       "Speed": "NatureCorrection.Increased"
     },
     {
-      "Key": "Modest",
       "Id": "15",
+      "Key": "Modest",
       "Name": "ひかえめ",
       "Attack": "NatureCorrection.Decreased",
       "Defense": "NatureCorrection.NoChange",
@@ -161,8 +161,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Mild",
       "Id": "16",
+      "Key": "Mild",
       "Name": "おっとり",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Decreased",
@@ -171,8 +171,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Quiet",
       "Id": "17",
+      "Key": "Quiet",
       "Name": "れいせい",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -181,8 +181,8 @@
       "Speed": "NatureCorrection.Decreased"
     },
     {
-      "Key": "Bashful",
       "Id": "18",
+      "Key": "Bashful",
       "Name": "てれや",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -191,8 +191,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Rash",
       "Id": "19",
+      "Key": "Rash",
       "Name": "うっかりや",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -201,8 +201,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Calm",
       "Id": "20",
+      "Key": "Calm",
       "Name": "おだやか",
       "Attack": "NatureCorrection.Decreased",
       "Defense": "NatureCorrection.NoChange",
@@ -211,8 +211,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Gentle",
       "Id": "21",
+      "Key": "Gentle",
       "Name": "おとなしい",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.Decreased",
@@ -221,8 +221,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Sassy",
       "Id": "22",
+      "Key": "Sassy",
       "Name": "なまいき",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -231,8 +231,8 @@
       "Speed": "NatureCorrection.Decreased"
     },
     {
-      "Key": "Careful",
       "Id": "23",
+      "Key": "Careful",
       "Name": "しんちょう",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",
@@ -241,8 +241,8 @@
       "Speed": "NatureCorrection.NoChange"
     },
     {
-      "Key": "Quirky",
       "Id": "24",
+      "Key": "Quirky",
       "Name": "きまぐれ",
       "Attack": "NatureCorrection.NoChange",
       "Defense": "NatureCorrection.NoChange",

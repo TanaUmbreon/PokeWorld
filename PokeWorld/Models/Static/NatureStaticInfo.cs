@@ -1,17 +1,20 @@
-﻿namespace PokeWorld.Models.Static
+﻿using System.Diagnostics;
+
+namespace PokeWorld.Models.Static
 {
     /// <summary>
     /// せいかくの静的データを格納します。
     /// </summary>
+    [DebuggerDisplay("{{ Id = {id}, Key = {Key} }}")]
     public record NatureStaticInfo(
-        string Key,
         int Id,
+        string Key,
         NatureCorrection Attack,
         NatureCorrection Defense,
         NatureCorrection SpAttack,
         NatureCorrection SpDefense,
         NatureCorrection Speed)
-        : StaticInfo(Key, Id)
+        : StaticInfo(Id, Key)
     {
         /// <summary>
         /// こうげきのせいかく補正を取得します。
