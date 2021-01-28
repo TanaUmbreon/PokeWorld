@@ -8,12 +8,12 @@
         string Key)
     {
         /// <summary>
-        /// インスタンスを一意に特定する整数値を取得します。
+        /// インスタンスを一意に特定する整数型識別子を取得します。
         /// </summary>
         public int Id { get; init; } = Id;
 
         /// <summary>
-        /// インスタンスを一意に特定する文字列を取得します。
+        /// インスタンスを一意に特定する文字列型識別子を取得します。
         /// </summary>
         public string Key { get; init; } = Key;
     }

@@ -5,40 +5,16 @@ namespace PokeWorld.Models.Static
     /// <summary>
     /// せいかくの静的データを格納します。
     /// </summary>
-    [DebuggerDisplay("{{ Id = {id}, Key = {Key} }}")]
+    [DebuggerDisplay(@"\{ Id = {Id}, Key = {Key} \}")]
     public record NatureStaticInfo(
         int Id,
         string Key,
-        NatureCorrection Attack,
-        NatureCorrection Defense,
-        NatureCorrection SpAttack,
-        NatureCorrection SpDefense,
-        NatureCorrection Speed)
+        NatureCorrections Corrections)
         : StaticInfo(Id, Key)
     {
         /// <summary>
-        /// こうげきのせいかく補正を取得します。
+        /// 性格補正のセットを取得します。
         /// </summary>
-        public NatureCorrection Attack { get; init; } = Attack;
-
-        /// <summary>
-        /// ぼうぎょのせいかく補正を取得します。
-        /// </summary>
-        public NatureCorrection Defense { get; init; } = Defense;
-
-        /// <summary>
-        /// とくこうのせいかく補正を取得します。
-        /// </summary>
-        public NatureCorrection SpAttack { get; init; } = SpAttack;
-
-        /// <summary>
-        /// とくぼうのせいかく補正を取得します。
-        /// </summary>
-        public NatureCorrection SpDefense { get; init; } = SpDefense;
-
-        /// <summary>
-        /// すばやさのせいかく補正を取得します。
-        /// </summary>
-        public NatureCorrection Speed { get; init; } = Speed;
+        public NatureCorrections Corrections { get; init; } = Corrections;
     }
 }

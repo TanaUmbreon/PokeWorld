@@ -1,34 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
 namespace PokeWorld.Common
 {
     /// <summary>
-    /// 識別子と名前を持つ列挙型クラスを提供します。
+    /// ID とキー名を持つ列挙型クラスを提供します。
     /// </summary>
-    public abstract class Enumeration : IComparable
+    public abstract class Enumeration
     {
         /// <summary>
-        /// インスタンスを一意に特定する為の識別子を取得します。
+        /// インスタンスを一意に特定する整数型識別子を取得します。
         /// </summary>
-        public int Id { get; private set; }
+        public int Id { get; init; }
 
         /// <summary>
-        /// インスタンスの名前を取得します。
+        /// インスタンスを一意に特定する文字列型識別子を取得します。
         /// </summary>
-        public string Name { get; private set; }
+        public string Key { get; init; }
 
         /// <summary>
-        /// <see cref="Enumeration"/> のコンストラクタ。
+        /// <see cref="Enumeration"/> のインスタンスを生成します。
         /// </summary>
-        /// <param name="id">インスタンスを一意に特定する為の識別子。</param>
-        /// <param name="name">インスタンスの名前。</param>
-        protected Enumeration(int id, string name)
+        /// <param name="id">インスタンスを一意に特定する整数型識別子。</param>
+        /// <param name="key">インスタンスを一意に特定する文字列型識別子。</param>
+        protected Enumeration(int id, string key)
         {
             Id = id;
-            Name = name;
+            Key = key;
         }
 
         /// <summary>
@@ -49,7 +48,7 @@ namespace PokeWorld.Common
         /// このインスタンスをそれと等価な文字列の値に変換します。
         /// </summary>
         /// <returns></returns>
-        public override string ToString() => Name;
+        public override string ToString() => Key;
 
         /// <summary>
         /// このインスタンスと、指定したオブジェクトが同一かどうかを判断します。
@@ -71,32 +70,8 @@ namespace PokeWorld.Common
         /// <returns></returns>
         public override int GetHashCode() => Id.GetHashCode();
 
-        /// <summary>
-        /// このインスタンスを同じ型の別のオブジェクトと比較し、
-        /// このインスタンスの並べ替え順序での位置が、
-        /// 比較対象のオブジェクトと比べて前か、後か、または同じかを示す整数を返します。
-        /// </summary>
-        /// <param name="obj">このインスタンスと比較するオブジェクト。</param>
-        /// <returns>比較対象オブジェクトの相対順序を示す値。</returns>
-        public int CompareTo(object? obj)
-        {
-            if (obj is not Enumeration otherValue)
-            {
-                throw new ArgumentException($"{nameof(obj)} の型がこのインスタンスの型と異なります。", nameof(obj));
-            }
-            return Id.CompareTo(otherValue.Id);
-        }
-
         public static bool operator ==(Enumeration left, Enumeration right) => left is null ? right is null : left.Equals(right);
 
         public static bool operator !=(Enumeration left, Enumeration right) => !(left == right);
-
-        public static bool operator <(Enumeration left, Enumeration right) => left is null ? right is object : left.CompareTo(right) < 0;
-
-        public static bool operator <=(Enumeration left, Enumeration right) => left is null || left.CompareTo(right) <= 0;
-
-        public static bool operator >(Enumeration left, Enumeration right) => left is object && left.CompareTo(right) > 0;
-
-        public static bool operator >=(Enumeration left, Enumeration right) => left is null ? right is null : left.CompareTo(right) >= 0;
     }
 }

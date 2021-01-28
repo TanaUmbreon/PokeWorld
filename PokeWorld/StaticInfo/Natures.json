@@ -4,251 +4,301 @@
       "Id": "0",
       "Key": "Hardy",
       "Name": "がんばりや",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "1",
       "Key": "Lonely",
       "Name": "さみしがり",
-      "Attack": "NatureCorrection.Increased",
-      "Defense": "NatureCorrection.Decreased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Increased",
+        "Defense": "Decreased",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "2",
       "Key": "Brave",
       "Name": "ゆうかん",
-      "Attack": "NatureCorrection.Increased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Decreased"
+      "Corrections": {
+        "Attack": "Increased",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "Decreased"
+      }
     },
     {
       "Id": "3",
       "Key": "Adamant",
       "Name": "いじっぱり",
-      "Attack": "NatureCorrection.Increased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Decreased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Increased",
+        "Defense": "NoChange",
+        "SpAttack": "Decreased",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "4",
       "Key": "Naughty",
       "Name": "やんちゃ",
-      "Attack": "NatureCorrection.Increased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Decreased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Increased",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "Decreased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "5",
       "Key": "Bold",
       "Name": "ずぶとい",
-      "Attack": "NatureCorrection.Decreased",
-      "Defense": "NatureCorrection.Increased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Decreased",
+        "Defense": "Increased",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "6",
       "Key": "Docile",
       "Name": "すなお",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "7",
       "Key": "Relaxed",
       "Name": "のんき",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Increased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Decreased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Increased",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "Decreased"
+      }
     },
     {
       "Id": "8",
       "Key": "Impish",
       "Name": "わんぱく",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Increased",
-      "SpAttack": "NatureCorrection.Decreased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Increased",
+        "SpAttack": "Decreased",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "9",
       "Key": "Lax",
       "Name": "のうてんき",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Increased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Decreased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Increased",
+        "SpAttack": "NoChange",
+        "SpDefense": "Decreased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "10",
       "Key": "Timid",
       "Name": "おくびょう",
-      "Attack": "NatureCorrection.Decreased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Increased"
+      "Corrections": {
+        "Attack": "Decreased",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "Increased"
+      }
     },
     {
       "Id": "11",
       "Key": "Hasty",
       "Name": "せっかち",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Decreased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Increased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Decreased",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "Increased"
+      }
     },
     {
       "Id": "12",
       "Key": "Serious",
       "Name": "まじめ",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "13",
       "Key": "Jolly",
       "Name": "ようき",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Decreased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Increased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "Decreased",
+        "SpDefense": "NoChange",
+        "Speed": "Increased"
+      }
     },
     {
       "Id": "14",
       "Key": "Naive",
       "Name": "むじゃき",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Decreased",
-      "Speed": "NatureCorrection.Increased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "Decreased",
+        "Speed": "Increased"
+      }
     },
     {
       "Id": "15",
       "Key": "Modest",
       "Name": "ひかえめ",
-      "Attack": "NatureCorrection.Decreased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Increased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Decreased",
+        "Defense": "NoChange",
+        "SpAttack": "Increased",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "16",
       "Key": "Mild",
       "Name": "おっとり",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Decreased",
-      "SpAttack": "NatureCorrection.Increased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Decreased",
+        "SpAttack": "Increased",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "17",
       "Key": "Quiet",
       "Name": "れいせい",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Increased",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.Decreased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "Increased",
+        "SpDefense": "NoChange",
+        "Speed": "Decreased"
+      }
     },
     {
       "Id": "18",
       "Key": "Bashful",
       "Name": "てれや",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "19",
       "Key": "Rash",
       "Name": "うっかりや",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Increased",
-      "SpDefense": "NatureCorrection.Decreased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "Increased",
+        "SpDefense": "Decreased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "20",
       "Key": "Calm",
       "Name": "おだやか",
-      "Attack": "NatureCorrection.Decreased",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Increased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "Decreased",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "Increased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "21",
       "Key": "Gentle",
       "Name": "おとなしい",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.Decreased",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Increased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "Decreased",
+        "SpAttack": "NoChange",
+        "SpDefense": "Increased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "22",
       "Key": "Sassy",
       "Name": "なまいき",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.Increased",
-      "Speed": "NatureCorrection.Decreased"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "Increased",
+        "Speed": "Decreased"
+      }
     },
     {
       "Id": "23",
       "Key": "Careful",
       "Name": "しんちょう",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.Decreased",
-      "SpDefense": "NatureCorrection.Increased",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "Decreased",
+        "SpDefense": "Increased",
+        "Speed": "NoChange"
+      }
     },
     {
       "Id": "24",
       "Key": "Quirky",
       "Name": "きまぐれ",
-      "Attack": "NatureCorrection.NoChange",
-      "Defense": "NatureCorrection.NoChange",
-      "SpAttack": "NatureCorrection.NoChange",
-      "SpDefense": "NatureCorrection.NoChange",
-      "Speed": "NatureCorrection.NoChange"
+      "Corrections": {
+        "Attack": "NoChange",
+        "Defense": "NoChange",
+        "SpAttack": "NoChange",
+        "SpDefense": "NoChange",
+        "Speed": "NoChange"
+      }
     }
   ]
 }

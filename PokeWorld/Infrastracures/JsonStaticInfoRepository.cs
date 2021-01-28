@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using Newtonsoft.Json;
+using PokeWorld.Models;
 using PokeWorld.Models.Static;
 using PokeWorld.Repositories;
-using Newtonsoft.Json;
-using System.IO;
 
 namespace PokeWorld.Infrastracures
 {
@@ -29,23 +27,25 @@ namespace PokeWorld.Infrastracures
                 throw new DirectoryNotFoundException($"静的データ フォルダ '{directory.FullName}' は存在しません。");
             }
 
-            var file = new FileInfo(Path.Combine(directory.FullName, "Natures.json"));
+            JsonNatureStaticInfo obj = Load<JsonNatureStaticInfo>(Path.Combine(directory.FullName, "Natures.json"), new EnumerationJsonConverter<NatureCorrection>());
+            Natures = new StaticInfoCollection<NatureStaticInfo>(obj.Natures);
+        }
+
+        private static T Load<T>(string filePath, params JsonConverter[] converters)
+        {
+            var file = new FileInfo(filePath);
             if (!file.Exists)
             {
                 throw new FileNotFoundException($"静的データ ファイル '{file.FullName}' は存在しません。");
             }
-            JsonNatureStaticInfo obj = JsonConvert.DeserializeObject<JsonNatureStaticInfo>(File.ReadAllText(file.FullName));
-            Natures = new StaticInfoCollection<NatureStaticInfo>(obj.Natures);
+
+            return JsonConvert.DeserializeObject<T>(File.ReadAllText(file.FullName), converters)
+                ?? throw new InvalidCastException();
         }
 
-        internal class JsonNatureStaticInfo
+        private class JsonNatureStaticInfo
         {
             public IEnumerable<NatureStaticInfo> Natures { get; set; } = Array.Empty<NatureStaticInfo>();
-        }
-
-        internal class JsonStaticInfo<T> where T : StaticInfo
-        {
-            public IEnumerable<T> Items { get; set; } = Array.Empty<T>();
         }
     }
 }

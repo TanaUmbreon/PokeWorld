@@ -80,7 +80,7 @@ namespace PokeWorld.Models.Static
         /// <summary>
         /// 静的データを ID の昇順で反復処理する列挙子を返します。
         /// </summary>
-        /// <returns></returns>
+        /// <returns>静的データの列挙子。</returns>
         public IEnumerator<T> GetEnumerator() => idList.Values.GetEnumerator();
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
