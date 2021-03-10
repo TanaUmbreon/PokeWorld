@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace PokeWorld.Models.Static
@@ -8,7 +7,7 @@ namespace PokeWorld.Models.Static
     /// 静的データを ID またはキー名で参照するための読み取り専用コレクションです。
     /// </summary>
     /// <typeparam name="T">静的データの型。</typeparam>
-    public class StaticInfoCollection<T> : IEnumerable<T> where T : StaticInfo
+    public class StaticInfoCollection<T> where T : StaticInfo
     {
         private readonly IReadOnlyDictionary<int, T> idList;
         private readonly IReadOnlyDictionary<string, T> keyList;
@@ -81,8 +80,12 @@ namespace PokeWorld.Models.Static
         /// 静的データを ID の昇順で反復処理する列挙子を返します。
         /// </summary>
         /// <returns>静的データの列挙子。</returns>
-        public IEnumerator<T> GetEnumerator() => idList.Values.GetEnumerator();
+        public IEnumerator<T> GetEnumeratorOrderById() => idList.Values.GetEnumerator();
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        /// <summary>
+        /// 静的データをキー名の昇順で反復処理する列挙子を返します。
+        /// </summary>
+        /// <returns>静的データの列挙子。</returns>
+        public IEnumerator<T> GetEnumeratorOrderByKey() => keyList.Values.GetEnumerator();
     }
 }
