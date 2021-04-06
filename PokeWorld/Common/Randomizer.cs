@@ -8,7 +8,7 @@ namespace PokeWorld.Common
     /// </summary>
     public class Randomizer : IRandomizer
     {
-        private readonly Random random = new Random();
+        private readonly Random random = new();
 
         /// <summary>
         /// <see cref="Randomizer"/> の新しいインスタンスを生成します。
@@ -21,10 +21,10 @@ namespace PokeWorld.Common
 
         public bool NextBoolean() => Next(0, 2) == 1;
 
-        public T? SelectOne<T>(IList<T> source)
+        public T SelectOne<T>(IList<T> source)
         {
             if (source == null) { throw new ArgumentNullException(nameof(source)); }
-            if (source.Count <= 0) { throw new ArgumentException($"引数 {nameof(source)} に要素が空のコレクションは指定できません。", nameof(source)); }
+            if (source.Count <= 0) { throw new ArgumentException($"要素が空のコレクションは指定できません。", nameof(source)); }
 
             return source[Next(0, source.Count)];
         }

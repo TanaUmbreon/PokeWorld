@@ -13,7 +13,7 @@ namespace PokeWorld.Individualities
         private const int MaxValue = int.MaxValue;
 
         /// <summary>経験値ゼロを表すインスタンス</summary>
-        public static readonly Experience Zero = new Experience(0);
+        public static readonly Experience Zero = new(0);
 
         /// <summary>
         /// 経験値を取得します。
@@ -55,9 +55,9 @@ namespace PokeWorld.Individualities
         /// <returns></returns>
         public override string ToString() => Value.ToString();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            if (!(obj is Experience otherValue)) { return false; }
+            if (obj is not Experience otherValue) { return false; }
 
             return GetType().Equals(obj.GetType()) && Value.Equals(otherValue.Value);
         }

@@ -11,14 +11,6 @@ namespace PokeWorld.Test.Models
     [TestFixture]
     public class BattleCharacterTest
     {
-#pragma warning disable CS8618 // null 非許容のフィールドには、コンストラクターの終了時に null 以外の値が入っていなければなりません。Null 許容として宣言することをご検討ください。
-        private BattleCharacter character;
-#pragma warning restore CS8618 // null 非許容のフィールドには、コンストラクターの終了時に null 以外の値が入っていなければなりません。Null 許容として宣言することをご検討ください。
-
-        [SetUp]
-        public void SetUp()
-            => character = new BattleCharacter(CreateGenerator());
-
         private IBattleCharacterGenerator CreateGenerator()
         {
             var mock = new Mock<IBattleCharacterGenerator>();
@@ -36,6 +28,8 @@ namespace PokeWorld.Test.Models
         [Test]
         public void TestNew()
         {
+            var character = new BattleCharacter(CreateGenerator());
+
             Assert.That(character.Species.Key, Is.EqualTo("Bulbasaur"));
 
             Assert.That(character.Species.PokedexNumber.National, Is.EqualTo(1));
