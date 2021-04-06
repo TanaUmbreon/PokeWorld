@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace PokeWorld.Models.Static
+﻿namespace PokeWorld.Models.Static
 {
     /// <summary>
     /// 種族の静的データを格納します。
@@ -20,12 +16,21 @@ namespace PokeWorld.Models.Static
         public PokedexNumberStaticInfo PokedexNumber { get; init; }
 
         /// <summary>
+        /// 種族値の静的データを取得します。
+        /// </summary>
+        public BaseStatsStaticInfo BaseStats { get; init; }
+
+        /// <summary>
         /// <see cref="SpeciesStaticInfo"/> の新しいインスタンスを生成します。
         /// </summary>
-        public SpeciesStaticInfo(string key, PokedexNumberStaticInfo pokedexNumber)
+        /// <param name="key">種族を一意に特定する識別子</param>
+        /// <param name="pokedexNumber">図鑑番号の静的データ。</param>
+        /// <param name="baseStats">種族値の静的データ。</param>
+        public SpeciesStaticInfo(string key, PokedexNumberStaticInfo pokedexNumber, BaseStatsStaticInfo baseStats)
         {
             Key = key;
             PokedexNumber = pokedexNumber;
+            BaseStats = baseStats;
         }
 
         #region データ参照をサポートする為のメソッド
