@@ -1,0 +1,42 @@
+{
+  "Species": [
+    {
+      "Key": "001:Bulbasaur",
+      "PokedexNumber": {
+        "National": 1,
+        "Johto": 226,
+        "NewJohto": 231,
+        "CentralKalos": 80,
+        "IsleOfArmor": 68
+      },
+      "Types": [ "Grass", "Poison" ],
+      "Height": 0.7,
+      "Weight": 6.9,
+      "Abilities": [
+        { "Ability": "Overgrow", "IsHidden": false },
+        { "Ability": "Chlorophyll", "IsHidden": true }
+      ],
+      "BaseStats": {
+        "HitPoints": 45,
+        "Attack": 49,
+        "Defence": 49,
+        "SpecialAttack": 65,
+        "SpecialDefence": 65,
+        "Speed": 45
+      },
+      "Evolutions": [
+        {
+          "Priority": 0,
+          "EvolveTo": "002:Ivysaur",
+          "Condition": "LevelUp",
+          "ConditionArgs": [ 16 ]
+        }
+      ],
+      "EggGroups": [ "Monster", "Grass" ],
+      "EggCycle": 20,
+      "BasePointsYield": { "SpecialAttack": 1 },
+      "BaseExperienceYield": 64,
+      "BaseFriendship": 50
+    }
+  ]
+}

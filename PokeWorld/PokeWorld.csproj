@@ -15,11 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="StaticInfo\Natures.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="StaticInfo\Natures.json">
+    <Content Include="StaticInfo\Species.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -34,5 +30,7 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
