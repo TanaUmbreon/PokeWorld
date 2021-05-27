@@ -1,0 +1,290 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "description": "種族データのJSONファイルをスキーマを使って記述します。スキーマの定義は '/PokeWorld/Schemas/SpeciesStaticiInfoSchema.json' を参照してください。",
+  "type": "object",
+  "required": [
+    "Species"
+  ],
+  "properties": {
+    "Species": {
+      "type": "array",
+      "description": "種族オブジェクトの配列です。",
+      "items": {
+        "type": "object",
+        "description": "種族オブジェクトです。",
+        "required": [
+          "Key",
+          "PokedexNumber",
+          "Types",
+          "Height",
+          "Weight",
+          "Abilities",
+          "BaseStats",
+          "Evolutions",
+          "EggGroups",
+          "EggCycle",
+          "BasePointsYield",
+          "BaseExperienceYield",
+          "BaseFriendship"
+        ],
+        "properties": {
+          "Key": {
+            "type": "string",
+            "description": "種族オブジェクトを一意に特定する文字列型識別子です。"
+          },
+          "PokedexNumber": {
+            "type": "object",
+            "description": "図鑑番号オブジェクトです。その種族における各図鑑での図鑑番号を定義します。項目を省略または値を 'null' とすることでその図鑑に載っていないことを表します。",
+            "required": [
+              "National"
+            ],
+            "properties": {
+              "National": {
+                "type": "integer",
+                "description": "全国図鑑での図鑑番号です。"
+              },
+              "Johto": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ジョウト図鑑での図鑑番号です。"
+              },
+              "Hoenn": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ホウエン図鑑での図鑑番号です。"
+              },
+              "Sinnoh": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "シンオウ図鑑での図鑑番号です。"
+              },
+              "NewJohto": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新ジョウト図鑑 (ハートゴールド・ソウルシルバー) での図鑑番号です。"
+              },
+              "Unova": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "イッシュ図鑑での図鑑番号です。"
+              },
+              "NewUnova": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新イッシュ図鑑 (ブラック2・ホワイト2) での図鑑番号です。"
+              },
+              "CentralKalos": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "セントラルカロス図鑑での図鑑番号です。"
+              },
+              "CoastalKalos": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "コーストカロス図鑑での図鑑番号です。"
+              },
+              "MountainKalos": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "マウンテンカロス図鑑での図鑑番号です。"
+              },
+              "NewHoenn": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新ホウエン図鑑 (オメガルビー・アルファサファイア) での図鑑番号です。"
+              },
+              "Alola": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "アローラ図鑑での図鑑番号です。"
+              },
+              "Melemele": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "メレメレ図鑑での図鑑番号です。"
+              },
+              "Akala": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "アーカラ図鑑での図鑑番号です。"
+              },
+              "Ulaula": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ウラウラ図鑑での図鑑番号です。"
+              },
+              "Poni": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ポニ図鑑での図鑑番号です。"
+              },
+              "NewAlola": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新アローラ図鑑 (ウルトラサン・ウルトラムーン) での図鑑番号です。"
+              },
+              "NewMelemele": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新メレメレ図鑑 (ウルトラサン・ウルトラムーン) での図鑑番号です。"
+              },
+              "NewAkala": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新アーカラ図鑑 (ウルトラサン・ウルトラムーン) での図鑑番号です。"
+              },
+              "NewUlaula": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新ウラウラ図鑑 (ウルトラサン・ウルトラムーン) での図鑑番号です。"
+              },
+              "NewPoni": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "新ポニ図鑑 (ウルトラサン・ウルトラムーン) での図鑑番号です。"
+              },
+              "Galar": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ガラル図鑑での図鑑番号です。"
+              },
+              "IsleOfArmor": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "ヨロイじま図鑑での図鑑番号です。"
+              },
+              "CrownTundra": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "カンムリせつげん図鑑での図鑑番号です。"
+              }
+            }
+          },
+          "Types": {
+            "type": "array",
+            "description": "タイプの配列です。タイプのキー名を1～2個定義します。2個の場合は異なるキー名を定義します。",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "Normal",
+                "Fire",
+                "Water",
+                "Electric",
+                "Grass",
+                "Ice",
+                "Fighting",
+                "Poison",
+                "Ground",
+                "Flying",
+                "Psychic",
+                "Bug",
+                "Rock",
+                "Ghost",
+                "Dragon",
+                "Dark",
+                "Steel",
+                "Fairy"
+              ],
+              "description": "タイプのキー名です。"
+            }
+          },
+          "Height": {
+            "type": "number",
+            "description": "高さです。メートル単位で定義します。"
+          },
+          "Weight": {
+            "type": "number",
+            "description": "重さです。キログラム単位で定義します。"
+          },
+          "Abilities": {
+            "type": "array",
+            "description": "特性オブジェクトの配列です。通常特性 ('\"IsHidden\"' が 'false') の要素を1～2個、隠れ特性 ('\"IsHidden\"' が 'true') の要素を0～1個定義します。",
+            "minItems": 1,
+            "maxItems": 3,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "description": "特性オブジェクトです。",
+              "required": [
+                "Ability",
+                "IsHidden"
+              ],
+              "properties": {
+                "Ability": {
+                  "type": "string",
+                  "description": "特性オブジェクトのキー名です。"
+                },
+                "IsHidden": {
+                  "type": "boolean",
+                  "description": "隠れ特性であることを示す値です。"
+                }
+              }
+            }
+          },
+          "BaseStats": {
+          },
+          "Evolutions": {
+          },
+          "EggGroups": {
+          },
+          "EggCycle": {
+          },
+          "BasePointsYield": {
+          },
+          "BaseExperienceYield": {
+          },
+          "BaseFriendship": {
+          }
+        }
+      }
+    }
+  }
+}

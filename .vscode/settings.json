@@ -3,5 +3,13 @@
         "**/.vscode": true,
         "**/bin": true,
         "**/obj": true
-    }
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/PokeWorld/StaticInfo/Species.json"
+            ],
+            "url": "/PokeWorld/Schemas/SpeciesStaticiInfoSchema.json"
+        }
+    ]
 }
