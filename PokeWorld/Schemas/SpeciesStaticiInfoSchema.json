@@ -270,18 +270,173 @@
             }
           },
           "BaseStats": {
+            "type": "object",
+            "description": "種族値オブジェクトです。",
+            "required": [
+              "HitPoints",
+              "Attack",
+              "Defence",
+              "SpecialAttack",
+              "SpecialDefence",
+              "Speed"
+            ],
+            "properties": {
+              "HitPoints": {
+                "type": "integer",
+                "description": "HP種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "Attack": {
+                "type": "integer",
+                "description": "こうげき種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "Defence": {
+                "type": "integer",
+                "description": "ぼうぎょ種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "SpecialAttack": {
+                "type": "integer",
+                "description": "とくこう種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "SpecialDefence": {
+                "type": "integer",
+                "description": "とくぼう種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              },
+              "Speed": {
+                "type": "integer",
+                "description": "すばやさ種族値です。1 以上 255 以下の値で定義します。",
+                "minimum": 1,
+                "maximum": 255
+              }
+            }
           },
           "Evolutions": {
+            "type": "array",
+            "description": "進化情報オブジェクトの配列です。",
+            "items": {
+              "type": "object",
+              "description": "進化情報オブジェクトです。",
+              "required": [
+                "Priority",
+                "EvolveTo",
+                "Condition",
+                "ConditionArgs"
+              ],
+              "properties": {
+                "Priority": {
+                  "type": "integer",
+                  "description": "適用される進化の優先度です。0 以上の値で定義します。数値が小さいほど優先されます。",
+                  "minimum": 0
+                },
+                "EvolveTo": {
+                  "type": "string",
+                  "description": "進化先の種族を表す種族キーです。"
+                },
+                "Condition": {
+                  "type": "string",
+                  "description": "進化条件スクリプトの名前です。 `EvolutionCondition_xxx` の `xxx` 部分を定義します。"
+                },
+                "ConditionArgs": {
+                  "type": "array",
+                  "description": "進化条件スクリプトに渡すパラメータの配列です。パラメータは任意の値です。"
+                }
+              }
+            }
           },
           "EggGroups": {
+            "type": "array",
+            "description": "タマゴ グループの配列です。タマゴグループのキー名を1～2個定義します。2個の場合は異なるキー名を定義します。",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "Monster",
+                "Mineral",
+                "Grass",
+                "Water1",
+                "Water2",
+                "Water3",
+                "Dragon",
+                "Flying",
+                "HumanLike",
+                "Amorphous",
+                "Bug",
+                "Fairy",
+                "Field",
+                "Ditto",
+                "NoEggsDiscovered"
+              ],
+              "description": "タマゴ グループのキー名です。"
+            }
           },
           "EggCycle": {
+            "type": "integer",
+            "description": "タマゴの孵化にかかるサイクル数です。1 以上の値で定義します。",
+            "minimum": 1
           },
           "BasePointsYield": {
+            "type": "object",
+            "description": "獲得基礎ポイント (努力値) オブジェクトです。",
+            "properties": {
+              "HitPoints": {
+                "type": "integer",
+                "description": "HPの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "Attack": {
+                "type": "integer",
+                "description": "こうげきの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "Defence": {
+                "type": "integer",
+                "description": "ぼうぎょの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "SpecialAttack": {
+                "type": "integer",
+                "description": "とくこうの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "SpecialDefence": {
+                "type": "integer",
+                "description": "とくぼうの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "Speed": {
+                "type": "integer",
+                "description": "すばやさの獲得基礎ポイント (努力値) です。0 以上 3 以下の値で定義します。プロパティを省略した場合は値を 0 として扱います。",
+                "minimum": 0,
+                "maximum": 3
+              }
+            }
           },
           "BaseExperienceYield": {
+            "type": "integer",
+            "description": "基礎経験値です。0 以上 255 以下の値で定義します。",
+            "minimum": 0,
+            "maximum": 255
           },
           "BaseFriendship": {
+            "type": "integer",
+            "description": "初期なかよし度です。0 以上 255 以下の値で定義します。",
+            "minimum": 0,
+            "maximum": 255
           }
         }
       }
