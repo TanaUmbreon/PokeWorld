@@ -12,7 +12,7 @@ namespace PokeWorld.Models
         IEnumerable<Type> Types,
         decimal Height,
         decimal Weight,
-        IEnumerable<Ability> Abilities,
+        IEnumerable<string> Abilities,
         BaseStatsSet BaseStats,
         IEnumerable<Evolution> Evolutions,
         IEnumerable<EggGroup> EggGroups,
@@ -45,7 +45,7 @@ namespace PokeWorld.Models
         /// <summary>
         /// 特性を取得します。
         /// </summary>
-        public IEnumerable<Ability> Abilities { get; init; } = Abilities;
+        public IEnumerable<string> Abilities { get; init; } = Abilities;
 
         /// <summary>
         /// 種族値を取得します。
