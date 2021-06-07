@@ -8,10 +8,10 @@
   "properties": {
     "Species": {
       "type": "array",
-      "description": "種族オブジェクトの配列です。",
+      "description": "種族情報オブジェクトの配列です。",
       "items": {
         "type": "object",
-        "description": "種族オブジェクトです。",
+        "description": "種族情報オブジェクトです。",
         "required": [
           "Key",
           "PokedexNumber",
@@ -30,7 +30,7 @@
         "properties": {
           "Key": {
             "type": "string",
-            "description": "種族オブジェクトを一意に特定する文字列型識別子です。"
+            "description": "種族情報オブジェクトのインスタンスを一意に特定する文字列型識別子です。"
           },
           "PokedexNumber": {
             "type": "object",
@@ -246,21 +246,21 @@
           },
           "Abilities": {
             "type": "array",
-            "description": "特性オブジェクトの配列です。通常特性 ('\"IsHidden\"' が 'false') の要素を1～2個、隠れ特性 ('\"IsHidden\"' が 'true') の要素を0～1個定義します。",
+            "description": "特性情報オブジェクトの配列です。通常特性 ('\"IsHidden\"' が 'false') の要素を1～2個、隠れ特性 ('\"IsHidden\"' が 'true') の要素を0～1個定義します。",
             "minItems": 1,
             "maxItems": 3,
             "uniqueItems": true,
             "items": {
               "type": "object",
-              "description": "特性オブジェクトです。",
+              "description": "特性情報オブジェクトです。",
               "required": [
-                "Ability",
+                "AbilityName",
                 "IsHidden"
               ],
               "properties": {
-                "Ability": {
+                "AbilityName": {
                   "type": "string",
-                  "description": "特性オブジェクトのキー名です。"
+                  "description": "特性オブジェクトの名前です。`Ability_xxx` の `xxx` 部分を定義します。"
                 },
                 "IsHidden": {
                   "type": "boolean",
@@ -337,17 +337,17 @@
                   "description": "適用される進化の優先度です。0 以上の値で定義します。数値が小さいほど優先されます。",
                   "minimum": 0
                 },
-                "EvolveTo": {
+                "EvolveToSpeciesKey": {
                   "type": "string",
-                  "description": "進化先の種族を表す種族キーです。"
+                  "description": "進化先の種族を表す種族情報オブジェクトのキーです。"
                 },
-                "Condition": {
+                "ConditionName": {
                   "type": "string",
-                  "description": "進化条件スクリプトの名前です。 `EvolutionCondition_xxx` の `xxx` 部分を定義します。"
+                  "description": "進化条件オブジェクトの名前です。 `EvolutionCondition_xxx` の `xxx` 部分を定義します。"
                 },
                 "ConditionArgs": {
                   "type": "array",
-                  "description": "進化条件スクリプトに渡すパラメータの配列です。パラメータは任意の値です。"
+                  "description": "進化条件オブジェクトに渡すパラメータの配列です。パラメータは各進化条件オブジェクトのコンストラクタに応じた任意の値です。"
                 }
               }
             }

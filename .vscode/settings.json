@@ -7,9 +7,9 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "/PokeWorld/StaticInfo/Species.json"
+                "/PokeWorld/Static/Species.json"
             ],
-            "url": "/PokeWorld/Schemas/SpeciesStaticiInfoSchema.json"
+            "url": "/PokeWorld/Schemas/SpeciesSchema.json"
         }
     ]
 }

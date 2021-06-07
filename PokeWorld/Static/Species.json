@@ -13,8 +13,8 @@
       "Height": 0.7,
       "Weight": 6.9,
       "Abilities": [
-        { "Ability": "Overgrow", "IsHidden": false },
-        { "Ability": "Chlorophyll", "IsHidden": true }
+        { "AbilityName": "Overgrow", "IsHidden": false },
+        { "AbilityName": "Chlorophyll", "IsHidden": true }
       ],
       "BaseStats": {
         "HitPoints": 45,
@@ -27,8 +27,8 @@
       "Evolutions": [
         {
           "Priority": 0,
-          "EvolveTo": "002:Ivysaur",
-          "Condition": "LevelUp",
+          "EvolveToSpeciesKey": "002:Ivysaur",
+          "ConditionName": "LevelUp",
           "ConditionArgs": [ 16 ]
         }
       ],

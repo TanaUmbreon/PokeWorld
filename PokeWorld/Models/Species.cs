@@ -4,7 +4,7 @@ using PokeWorld.Common;
 namespace PokeWorld.Models
 {
     /// <summary>
-    /// 種族の静的データを格納します。
+    /// 種族情報を格納するレコードです。
     /// </summary>
     public record Species(
         string Key,
@@ -20,7 +20,7 @@ namespace PokeWorld.Models
         BasePointsSet BasePointsYield,
         int BaseExperienceYield,
         int BaseFriendship
-        ) : StaticInfoBase(Key)
+        ) : KeyRecord(Key)
     {
         /// <summary>
         /// 図鑑番号を取得します。
