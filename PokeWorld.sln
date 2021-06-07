@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeWorld.Test", "PokeWorld.Test\PokeWorld.Test.csproj", "{E6018298-0AE8-4218-9887-DF64EC771325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeWorld", "PokeWorld\PokeWorld.csproj", "{CB823A8C-696D-4C4B-BEC5-1B2DD660D844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeWorld", "PokeWorld\PokeWorld.csproj", "{CB823A8C-696D-4C4B-BEC5-1B2DD660D844}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4ADA25E3-C4A4-4AD4-85ED-3BDF6C3CB5CB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
